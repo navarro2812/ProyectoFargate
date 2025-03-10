@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2fzzw0Lm90M=",
+  "success": true,
+  "projectFilePath": "D:\\Examen para el Trabajo\\ProyectoFargate\\ProyectoFargate\\ProyectoFargate.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\falco\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\falco\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
