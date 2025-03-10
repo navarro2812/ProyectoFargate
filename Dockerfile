@@ -8,4 +8,4 @@ WORKDIR /app
 COPY ProyectoFargate/bin/Release/net8.0/ ./
 
 # 4. Especifica el comando de inicio
-CMD ["dotnet", "ProyectoFargateNet8.dll"]
+CMD ["dotnet", "ProyectoFargate.dll"]
