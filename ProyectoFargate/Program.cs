@@ -21,7 +21,7 @@ class Program
         double numero;
         while (!double.TryParse(Console.ReadLine(), out numero))
         {
-            Console.Write("Ingrese un número válido: ");
+            Console.Write("Ingrese un número válido rapido v2: ");
         }
         return numero;
     }
