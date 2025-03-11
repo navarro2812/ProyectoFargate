@@ -22,7 +22,8 @@ while (!double.TryParse(Console.ReadLine(), out numero2))
 double suma = numero1 + numero2;
 double resta = numero1 - numero2;
 double multiplicacion = numero1 * numero2;
-string division = (numero2 != 0) ? (numero1 / numero2).ToString("F2") : "Error: No se puede dividir entre cero";
+double resultado = (numero2 != 0) ? numero1 / numero2 : double.NaN;
+string division = (numero2 != 0) ? resultado.ToString("F2") : "Error: No se puede dividir entre cero";
 
 // Mostrar resultados
 Console.WriteLine("\nResultados:");
