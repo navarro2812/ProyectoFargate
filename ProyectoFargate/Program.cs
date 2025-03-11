@@ -1,36 +1,37 @@
 ﻿using System;
 
-Console.WriteLine("Calculadora Básica prueba 2");
-
-// Solicitar el primer número
-Console.Write("Ingrese el primer número: ");
-double numero1;
-while (!double.TryParse(Console.ReadLine(), out numero1))
+class Program
 {
-    Console.Write("Ingrese un número válido: ");
+    static void Main()
+    {
+        Console.WriteLine("Calculadora Básica prueba 2");
+
+        double numero1 = LeerNumero("Ingrese el primer número: ");
+        double numero2 = LeerNumero("Ingrese el segundo número: ");
+
+        MostrarResultados(numero1, numero2);
+
+        Console.WriteLine("\nPresiona cualquier tecla para finalizar...");
+        Console.ReadKey();
+    }
+
+    static double LeerNumero(string mensaje)
+    {
+        Console.Write(mensaje);
+        double numero;
+        while (!double.TryParse(Console.ReadLine(), out numero))
+        {
+            Console.Write("Ingrese un número válido: ");
+        }
+        return numero;
+    }
+
+    static void MostrarResultados(double numero1, double numero2)
+    {
+        Console.WriteLine("\nResultados:");
+        Console.WriteLine("Suma: " + (numero1 + numero2));
+        Console.WriteLine("Resta: " + (numero1 - numero2));
+        Console.WriteLine("Multiplicación: " + (numero1 * numero2));
+        Console.WriteLine("División: " + (numero2 != 0 ? (numero1 / numero2).ToString("F2") : "Error: No se puede dividir entre cero"));
+    }
 }
-
-// Solicitar el segundo número
-Console.Write("Ingrese el segundo número: ");
-double numero2;
-while (!double.TryParse(Console.ReadLine(), out numero2))
-{
-    Console.Write("Ingrese un número válido rapido: ");
-}
-
-// Realizar operaciones
-double suma = numero1 + numero2;
-double resta = numero1 - numero2;
-double multiplicacion = numero1 * numero2;
-double division = numero1 / numero2;
-
-
-// Mostrar resultados
-Console.WriteLine("\nResultados:");
-Console.WriteLine("Suma: " + suma);
-Console.WriteLine("Resta: " + resta);
-Console.WriteLine("Multiplicación: " + multiplicacion);
-Console.WriteLine("División: " + division);
-
-Console.WriteLine("\nPresiona cualquier tecla para finalizar...");
-Console.ReadKey();
