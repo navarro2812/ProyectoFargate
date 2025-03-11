@@ -3,11 +3,11 @@
 Console.WriteLine("Calculadora Básica prueba 2");
 
 // Solicitar el primer número
-Console.Write("Ingrese el primer número rapido: ");
+Console.Write("Ingrese el primer número: ");
 double numero1;
 while (!double.TryParse(Console.ReadLine(), out numero1))
 {
-    Console.Write("Ingrese un número válido: ");
+    Console.Write("Ingrese un número válido rapido: ");
 }
 
 // Solicitar el segundo número
@@ -15,7 +15,7 @@ Console.Write("Ingrese el segundo número: ");
 double numero2;
 while (!double.TryParse(Console.ReadLine(), out numero2))
 {
-    Console.Write("Ingrese un número válido: ");
+    Console.Write("Ingrese un número válido rapido: ");
 }
 
 // Realizar operaciones
