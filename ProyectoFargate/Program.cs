@@ -7,7 +7,7 @@ Console.Write("Ingrese el primer número: ");
 double numero1;
 while (!double.TryParse(Console.ReadLine(), out numero1))
 {
-    Console.Write("Ingrese un número válido rapido: ");
+    Console.Write("Ingrese un número válido: ");
 }
 
 // Solicitar el segundo número
