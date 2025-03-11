@@ -3,7 +3,7 @@
 Console.WriteLine("Calculadora Básica prueba 2");
 
 // Solicitar el primer número
-Console.Write("Ingrese el primer número: ");
+Console.Write("Ingrese el primer número rapido: ");
 double numero1;
 while (!double.TryParse(Console.ReadLine(), out numero1))
 {
