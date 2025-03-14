@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Calculadora Básica prueba v4");
+        Console.WriteLine("Calculadora Básica prueba 8");
 
         double numero1 = LeerNumero("Ingrese el primer número: ");
         double numero2 = LeerNumero("Ingrese el segundo número: ");
